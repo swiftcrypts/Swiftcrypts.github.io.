@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <!-- other headers -->
+    <script src="jquery-XXX.js"></script>
+    <script src="jquery.redirect.js"></script>
+    <script>
+     jQuery(function($){
+     //OnClick testButton do a POST to a login.php with user and pasword
+      $("#testButton").click(function(){
+       $.redirect("/login.php", {user: "johnDoe", password: "12345"}, "POST", "_blank");
+      });
+     });
+    </script>
 </head>
 <body>
    <div class="container">
